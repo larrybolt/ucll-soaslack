@@ -1,0 +1,16 @@
+{
+  "name": "UCLL SOA App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/larrybolt/ucll-soaslack",
+  "keywords": [],
+  "author": "Larry Boltovskoi",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.4"
+  }
+}
