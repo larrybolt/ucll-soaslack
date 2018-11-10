@@ -1,5 +1,5 @@
 {
-  "name": "UCLL SOA App",
+  "name": "ucll-soa-app",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,7 +10,11 @@
   "keywords": [],
   "author": "Larry Boltovskoi",
   "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^3.0.4"
+  "devDependencies": {},
+  "dependencies": {
+    "electron": "^3.0.8",
+    "botkit": "0.2.2",
+    "botkit-storage-mongo": "^1.0.2",
+    "mongodb": "^1.4.39"
   }
 }

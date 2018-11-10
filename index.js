@@ -1,6 +1,3 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
 /**
  * A Bot for Slack!
  */
@@ -93,7 +90,7 @@ controller.hears('hello', 'direct_message', function (bot, message) {
     bot.reply(message, 'Hello!');
 });
 
-var slide = 1;
+
 controller.on('direct_message,mention,direct_mention', function (bot, message) {
     bot.api.reactions.add({
         timestamp: message.ts,
@@ -105,5 +102,4 @@ controller.on('direct_message,mention,direct_mention', function (bot, message) {
         }
         bot.reply(message, 'I heard you loud and clear boss.');
     });
-    console.log('message', message);
 });
