@@ -3,13 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <style>
+      body { margin: 0; padding: 0; }
+      #webview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: inline-flex !important;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <webview id="webview" src="https://docs.google.com/presentation/d/e/2PACX-1vRubw9hV5fIzG2Ho_qu1OWjoqhv9W1oyHYwlZrb708JqPo0fnYYC5eRj2k5m-GVspSqwjo_MSCwM94k/embed?start=false&loop=false&delayms=30000&slide=id.gd9c453428_0_16#1"></webview>
+
 
     <script>
       // You can also require other files to run in this process
